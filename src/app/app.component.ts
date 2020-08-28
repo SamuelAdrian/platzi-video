@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Product } from './product.model';
 
 @Component({
@@ -8,6 +8,8 @@ import { Product } from './product.model';
 })
 export class AppComponent {
   title = 'platzi-store';
+
+  power = 10;
 
   products: Product[] = [
     {
