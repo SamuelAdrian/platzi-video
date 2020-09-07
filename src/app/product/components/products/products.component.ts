@@ -15,7 +15,7 @@ export class ProductsComponent implements OnInit {
       image: 'assets/images/camiseta.png',
       title: 'Camiseta',
       price: 80000,
-      description: 'bla bla bla bla bla'
+      description: '15151 bla bla bla 151515151'
     },
     {
       id: '2',

@@ -5,7 +5,7 @@ import {
     EventEmitter,
     OnInit,
     OnDestroy
-} from '@angular/core'; 
+} from '@angular/core';
 import { Product } from '../../../product.model';
 
 @Component({

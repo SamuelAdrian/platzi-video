@@ -9,12 +9,9 @@ import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 
 import { FormsModule } from '@angular/forms';
-
-
-
-
 import { SharedModule } from './shared/shared.module';
 
+import { CoreModule } from './core/core.module';
 
 registerLocaleData (localeEs);
 
@@ -22,15 +19,13 @@ registerLocaleData (localeEs);
   declarations: [
     AppComponent,
     LayoutComponent,
-
-
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     SharedModule,
+    CoreModule,
   ],
   providers: [ { provide: LOCALE_ID, useValue: 'es'} ],
   bootstrap: [AppComponent]
