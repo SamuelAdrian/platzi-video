@@ -14,6 +14,8 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HttpClientModule} from '@angular/common/http';
+
 registerLocaleData (localeEs);
 
 @NgModule({
@@ -28,6 +30,7 @@ registerLocaleData (localeEs);
     SharedModule,
     CoreModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [ { provide: LOCALE_ID, useValue: 'es'} ],
   bootstrap: [AppComponent]
