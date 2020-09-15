@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
-import { from } from 'rxjs';
 import { Product } from '../../../product.model';
-
 import { HttpClient } from '@angular/common/http';
-
 import { environment } from '../../../../environments/environment';
 
 @Injectable({
@@ -29,5 +26,9 @@ export class ProductsService {
 
   updateProduct (id: string, changes: Partial<Product>) {
     return this.http.put(`${environment.url_api}/products/${id}`, changes);
+  }
+
+  deleteProduct (id: string) {
+    return this.http.delete(`${environment.url_api}/products/${id}`);
   }
 }

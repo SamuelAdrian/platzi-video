@@ -58,4 +58,11 @@ export class ProductDetailComponent implements OnInit {
       console.log(product);
     });
   }
+
+  deleteProduct () {
+    this.productsService.deleteProduct('')
+    .subscribe(rta => {
+      console.log(rta);
+    });
+  }
 }
