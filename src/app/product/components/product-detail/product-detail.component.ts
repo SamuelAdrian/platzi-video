@@ -36,7 +36,7 @@ export class ProductDetailComponent implements OnInit {
   createProduct () {
     const newProduct: Product = {
       id: '234',
-      title: 'Nuevo Producto desde createProduct',
+      title: 'Nuevo Producto de Ejemplo',
       image: 'assets/images/banner-1.jpg',
       price: 3000,
       description: 'nuevo producto',
@@ -60,7 +60,7 @@ export class ProductDetailComponent implements OnInit {
   }
 
   deleteProduct () {
-    this.productsService.deleteProduct('')
+    this.productsService.deleteProduct('234')
     .subscribe(rta => {
       console.log(rta);
     });
