@@ -23,6 +23,8 @@
                     <mat-form-field>
                         <input placeholder="Price" formControlName="price" matInput type = "number">
                     </mat-form-field>
+                    <p *ngIf="form.get('price').hasError('price_invalid')">Este Campo no es Valido</p>
+                    <p *ngIf="form.get('price').hasError('required')">Este Campo es Requerido</p>
                 </div>
             </div>
             <div class="row">
